@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="50dp">
+
+    <TextView
+        android:id="@+id/TextAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:textSize="15sp"
+        android:textColor="@color/colorBlack"
+        />
+    <EditText
+        android:id="@+id/editTextAddress"
+        android:layout_width="match_parent"
+        android:textColor="@color/colorBlack"
+        android:hint="Address"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="35dp"
+        android:inputType="textPostalAddress"
+        android:background="@drawable/boarder_input"
+        android:layout_below="@+id/TextAddress"
+        />
+
+    <TextView
+        android:id="@+id/Textcity"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="City"
+        android:textColor="@color/colorBlack"
+        android:layout_below="@+id/editTextAddress">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/editTextcity"
+        android:inputType="text"
+        android:textColor="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:background="@drawable/boarder_input"
+        android:hint="City"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/Textcity"
+        />
+    <TextView
+        android:id="@+id/Textzipcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zip Code"
+        android:textSize="15sp"
+        android:textColor="@color/colorBlack"
+        android:layout_below="@+id/editTextcity"
+        />
+    <EditText
+        android:id="@+id/editTextzipcode"
+        android:layout_width="match_parent"
+        android:textColor="@color/colorBlack"
+        android:layout_height="35dp"
+        android:inputType="text"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:hint="Zip Code"
+        android:background="@drawable/boarder_input"
+        android:layout_below="@+id/Textzipcode" />
+
+    <TextView
+        android:id="@+id/Textcountry"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Country"
+        android:textColor="@color/colorBlack"
+        android:layout_below="@+id/editTextzipcode">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/editTextcountry"
+        android:inputType="text"
+        android:textColor="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:hint="Country"
+        android:background="@drawable/boarder_input"
+        android:layout_height="35dp"
+        android:layout_below="@+id/Textcountry"
+        />
+</RelativeLayout>

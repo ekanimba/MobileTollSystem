@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorwhite"
+    android:scrollbars="vertical">
+
+    <ImageButton
+        android:id="@+id/backLogin"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_back"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:background="@color/colorwhite"/>
+
+    <ImageButton
+        android:id="@+id/backscene1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:src="@drawable/ic_back"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:background="@color/colorwhite"/>
+    <ImageButton
+        android:id="@+id/backscene2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:src="@drawable/ic_back"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:background="@color/colorwhite"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/mainLogo"
+            android:layout_marginTop="10dp"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:src="@drawable/logo_black"
+            android:scaleType="fitCenter"/>
+
+        <TextView
+            android:id="@+id/getstarted"
+            android:text="Let's get started"
+            android:textSize="18sp"
+            android:textColor="@color/colorBlack"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mainLogo"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/getstarted"
+            android:id="@+id/buttnonscenes"
+            android:layout_centerHorizontal="true">
+
+
+            <ImageView
+                android:id="@+id/imagescene1"
+                android:layout_width="200dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/scene_1"/>
+
+            <ImageView
+                android:id="@+id/imagescene2"
+                android:layout_width="200dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/scene_2"
+                android:visibility="invisible"/>
+            <ImageView
+                android:id="@+id/imagescene3"
+                android:layout_width="200dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/scene_3"
+                android:visibility="invisible"/>
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/scene_root"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buttnonscenes"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="35dp">
+
+            <include layout="@layout/create_account_scene_1" />
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/buttonscene1"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:background="@color/colorBlack"
+            android:layout_centerHorizontal="true"
+            android:text="Continue"
+            android:textColor="@color/colorwhite"
+            android:layout_below="@+id/scene_root"/>
+
+
+        <Button
+            android:id="@+id/buttonscene2"
+            android:layout_width="250dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:background="@color/colorBlack"
+            android:layout_centerHorizontal="true"
+            android:text="Create Account"
+            android:visibility="gone"
+            android:textColor="@color/colorwhite"
+            android:layout_below="@+id/scene_root"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

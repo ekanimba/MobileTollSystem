@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddCarFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <ImageButton
+            android:id="@+id/buttonCloseCarfragment"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorwhite"
+            android:src="@drawable/ic_close_btn">
+        </ImageButton>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Vehicle"
+            android:layout_marginTop="80dp"
+            android:textSize="40sp"
+            android:layout_gravity="center"
+            android:textColor="@color/colorBlack"
+            />
+
+        <TextView
+            android:id="@+id/TextCarBrand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Car Brand"
+            android:textSize="15sp"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/colorBlack"
+            />
+        <EditText
+            android:id="@+id/editTextCarBrand"
+            android:textColor="@color/colorBlack"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:hint="Car Brand"
+            android:paddingLeft="10dp"
+            android:layout_height="35dp"
+            android:background="@drawable/boarder_input"
+            android:inputType="text"
+            android:layout_below="@+id/TextFirstname"
+            />
+
+
+        <TextView
+            android:id="@+id/TextCarModel"
+            android:layout_width="250dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Car Model"
+            android:textColor="@color/colorBlack"
+            android:layout_below="@+id/editTextFirstname">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/editTextCarModel"
+            android:inputType="text"
+            android:textColor="@color/colorBlack"
+            android:layout_width="match_parent"
+            android:hint="Car Model"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/boarder_input"
+            android:layout_height="35dp"
+            android:layout_below="@+id/TextLastname"
+            />
+
+        <TextView
+            android:id="@+id/TextCarFuel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Car Fuel"
+            android:textSize="15sp"
+            android:textColor="@color/colorBlack"
+            android:layout_below="@+id/editTextlastname"
+            />
+
+        <EditText
+            android:id="@+id/editCarFuel"
+            android:textColor="@color/colorBlack"
+            android:layout_width="match_parent"
+            android:paddingLeft="10dp"
+            android:hint="Car Fuel"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/boarder_input"
+            android:layout_height="35dp"
+            android:inputType="text"
+            android:layout_below="@+id/TextEmail"
+            />
+
+        <TextView
+            android:id="@+id/TextCarRegistrationNumber"
+            android:layout_width="250dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Registration Number"
+            android:textColor="@color/colorBlack"
+            android:layout_below="@+id/editTextEmail">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/editTextCarRegistrationNumber"
+            android:inputType="text"
+            android:hint="Registation number"
+            android:layout_height="35dp"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorBlack"
+            android:layout_width="match_parent"
+            android:background="@drawable/boarder_input"
+            android:layout_below="@+id/TextPassword" />
+
+        <Button
+            android:id="@+id/buttonAddvehicle"
+            android:layout_width="250dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:background="@color/colorBlack"
+            android:layout_centerHorizontal="true"
+            android:text="ADD"
+            android:textColor="@color/colorwhite"
+            android:layout_below="@+id/scene_root"/>
+
+    </LinearLayout>
+
+</FrameLayout>

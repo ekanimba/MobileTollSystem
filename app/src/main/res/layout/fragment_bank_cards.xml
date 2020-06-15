@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/colorwhite">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <ImageButton
+                        android:id="@+id/btn_back_settings"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/ic_back">
+                    </ImageButton>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cards"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:textSize="24sp"
+                    android:layout_marginLeft="10dp">
+                </TextView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.coordinatorlayout.widget.CoordinatorLayout
+                    android:id="@+id/cardCoordinatorLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="50dp">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/bankCard_recycler_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorwhite"/>
+
+                    <ImageButton
+                        android:id="@+id/btnAddBankCards"
+                        android:background="@drawable/btn_background"
+                        android:layout_width="50dp"
+                        android:layout_gravity="center|bottom"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_add_btn" />
+
+                </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "329003569597",
+    "firebase_url": "https://mobile-toll-system.firebaseio.com",
+    "project_id": "mobile-toll-system",
+    "storage_bucket": "mobile-toll-system.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:329003569597:android:9550c24caf59e004ef82d4",
+        "android_client_info": {
+          "package_name": "tollMobile.application"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "329003569597-mvlvp7sea4cfc6nedv4vnissil3qeotq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "tollMobile.application",
+            "certificate_hash": "b0c0cb49f86468fbcb54e46e70a53c37f311bc9e"
+          }
+        },
+        {
+          "client_id": "329003569597-ptimhpci6gdka8o5e7ubi89j1351peo9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDY-EIF928iQc_c3a-fxUUtM1TcxXq4Sb8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "329003569597-ptimhpci6gdka8o5e7ubi89j1351peo9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
